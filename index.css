@@ -1,0 +1,81 @@
+/* 	***	Sunset Miami ***
+	Code created by Luke Boothby
+	Assets created by Justin Leff  */
+
+
+/* To Do: Get .psd file or separate assets (no-text background etc) from Justin
+		  Get image to correctly load. */
+
+@font-face{
+	font-family: 'ballsOnTheRampage';
+	src: url('BALLSONTHERAMPAGE.eot');
+	src: local('BALLSONTHERAMPAGE'),
+		 url("../fonts/BALLSONTHERAMPAGE.ttf") format('truetype'),
+		 url('BALLSONTHERAMPAGE.svg#font') format('svg');
+
+}
+
+body{
+	background-image: "sunset-test.png" top-left no-repeat;
+	background-size: auto;
+
+}
+
+
+ul{
+	font: 'ballsOnTheRampage';
+	font-size:1.5em;
+	font-style: small-caps;
+	width: 150px;
+}
+
+li{
+	content: "•"; color: #33E9FF
+}
+
+li:hover{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+
+/* To Do: Find working fix to remove underline from links. */
+a.hover, a.link, a.vistied, a.focus a.active{
+	text-decoration: none!important;
+}
+
+
+#campaign{
+	position: absolute;
+	top: 75%;
+	left: 25%;
+}
+
+#options{
+	position: absolute;
+	top: 75%;
+	left: 38%;	
+}
+
+#crew{
+	position: absolute;
+	top: 75%;
+	left: 50%;	
+}
+
+#loadout{
+	position: absolute;
+	top: 75%;
+	left: 63%;
+}
+
+#casefiles{
+	position: absolute;
+	top: 81%;
+	left: 32%;	
+}
+
+#audiotapes{
+	position: absolute;
+	top: 81%;
+	left: 44%;	
+}
