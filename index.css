@@ -4,28 +4,23 @@
 
 
 /* To Do: Get .psd file or separate assets (no-text background etc) from Justin
-		  Get image to correctly load. */
+		  Get font to correctly load.  */
 
 @font-face{
 	font-family: 'ballsOnTheRampage';
-	src: url('BALLSONTHERAMPAGE.eot');
-	src: local('BALLSONTHERAMPAGE'),
-		 url("../fonts/BALLSONTHERAMPAGE.ttf") format('truetype'),
-		 url('BALLSONTHERAMPAGE.svg#font') format('svg');
+	src: url(BALLSONTHERAMPAGE.ttf) format('truetype');
 
 }
 
-body{
-	background-image: "sunset-test.png" top-left no-repeat;
-	background-size: auto;
-
+html { 
+  background: url(sunset-test.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-
 
 ul{
-	font: 'ballsOnTheRampage';
-	font-size:1.5em;
-	font-style: small-caps;
 	width: 150px;
 }
 
@@ -38,9 +33,12 @@ li:hover{
 	font-size: 1.1em;
 }
 
-/* To Do: Find working fix to remove underline from links. */
-a.hover, a.link, a.vistied, a.focus a.active{
+a{
+	font: 'ballsOnTheRampage';
+	font-size:1.5em;
+	font-style: small-caps;
 	text-decoration: none!important;
+	color: white;
 }
 
 
