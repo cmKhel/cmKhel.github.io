@@ -3,7 +3,8 @@
 	Assets created by Justin Leff  */
 
 
-/* To Do: Prevent links from overlapping when window is resized. */
+/* To Do: Prevent links from overlapping when window is resized.
+		  Put divs into a container to scale better. */
 
 @font-face {
   font-family: 'BALLSONTHERAMPAGE';
@@ -32,14 +33,12 @@ html {
   background-size: cover;
 }
 
-body{
-
-}
 
 div{
 	position: absolute;
 	padding: auto;
 	margin: auto;
+
 }
 
 ul{
@@ -68,7 +67,6 @@ a{
 	text-decoration: none!important;
 	color: white;
 }
-
 
 #campaign{
 	top: 75%;
