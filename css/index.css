@@ -3,8 +3,7 @@
 	Assets created by Justin Leff  */
 
 
-/* To Do: Get .psd file or separate assets (no-text background etc) from Justin
-		  Get font to correctly load.  */
+/* To Do: Prevent links from overlapping when window is resized. */
 
 @font-face {
   font-family: 'BALLSONTHERAMPAGE';
@@ -33,20 +32,34 @@ html {
   background-size: cover;
 }
 
-ul{
-	float: left;
+body{
 
 }
 
+div{
+	position: absolute;
+	padding: auto;
+	margin: auto;
+}
+
+ul{
+	padding: auto;
+	margin: auto;
+	float: left;
+}
+
 li{
+	padding: auto;
+	margin: auto;
+	display: block;
 	content: "•";
 	color: #33E9FF;
-	font-size: 4em;
+	font-size: 3.9em;
 	white-space: nowrap;
 }
 
 li:hover{
-	font-size: 4.2em;
+	font-size: 4em;
 }
 
 a{
@@ -58,37 +71,31 @@ a{
 
 
 #campaign{
-	position: absolute;
 	top: 75%;
 	left: 25%;
 }
 
 #options{
-	position: absolute;
 	top: 75%;
 	left: 38%;	
 }
 
 #crew{
-	position: absolute;
 	top: 75%;
 	left: 50%;	
 }
 
 #loadout{
-	position: absolute;
 	top: 75%;
-	left: 63%;
+	left: 62%;
 }
 
 #casefiles{
-	position: absolute;
-	top: 81%;
+	top: 84%;
 	left: 32%;	
 }
 
 #audiotapes{
-	position: absolute;
-	top: 81%;
+	top: 84%;
 	left: 56%;	
 }
