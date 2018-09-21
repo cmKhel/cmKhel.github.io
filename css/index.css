@@ -6,14 +6,27 @@
 /* To Do: Get .psd file or separate assets (no-text background etc) from Justin
 		  Get font to correctly load.  */
 
-@font-face{
-	font-family: 'ballsOnTheRampage';
-	src: url(BALLSONTHERAMPAGE.ttf) format('truetype');
-
+@font-face {
+  font-family: 'BALLSONTHERAMPAGE';
+  src: url('../fonts/BALLSONTHERAMPAGE.eot');
+  src: url('../fonts/BALLSONTHERAMPAGE.woff2') format('woff2'),
+       url('../fonts/BALLSONTHERAMPAGE.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: 'Ballsontherampage';
+  src: url('../fonts/Ballsontherampage.woff') format('woff'),
+       url('../fonts/Ballsontherampage.ttf') format('truetype'),
+       url('../fonts/Ballsontherampage.svg#Ballsontherampage') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 html { 
-  background: url('../images/sunset-test.png') no-repeat center center fixed; 
+  background: url('../images/Sunsets.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,22 +34,24 @@ html {
 }
 
 ul{
-	width: 150px;
+	float: left;
+
 }
 
 li{
-	content: "•"; color: #33E9FF
+	content: "•";
+	color: #33E9FF;
+	font-size: 4em;
+	white-space: nowrap;
 }
 
 li:hover{
-	font-weight: bold;
-	font-size: 1.1em;
+	font-size: 4.2em;
 }
 
 a{
-	font: 'ballsOnTheRampage';
-	font-size:1.5em;
-	font-style: small-caps;
+	font-family: 'Ballsontherampage';
+	font-variant: small-caps;
 	text-decoration: none!important;
 	color: white;
 }
@@ -75,5 +90,5 @@ a{
 #audiotapes{
 	position: absolute;
 	top: 81%;
-	left: 44%;	
+	left: 56%;	
 }
