@@ -8,7 +8,7 @@ html {
   background-size: cover;
 }
 
-/* Temporary placement. */
+/* Temporary placement. Fixed to the bottom right of browser. */
 #home {
   position: fixed;
   top: 90%;
@@ -17,8 +17,8 @@ html {
 
 /*  Container needed to position the images. 
     By utilizing relative positioning with a container div,
-    we can utilize absolute positioning with the contained class .picture 
-    and achieve responsive design. */
+    we can then use absolute positioning with the contained class .picture 
+    and achieve responsive design. Images scale to their container rather than the entire page. */
 .picContainer {
   position: relative;
   width: 100%;
@@ -27,22 +27,24 @@ html {
 
 /* Make the images inside responsive or idk actually do anything?? */
 .picture {
-/*  position: absolute; */
-  /* Scale the image down - they're huge and we don't like that. */
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /* Scale the image down - they're huge and we don't like that. Still not sure how to do this without affecting x,y positioning. */
   transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
   cursor: pointer;
 
-  /* Padding and margins aren't working how I think they're supposed to work. */
+  /*  Padding and margins aren't working how I think they're supposed to work.
+      Actually, nothing in here works how I think it's supposed to work. */
 
 }
 
 /* Container needed to position info image. */
 .infoContainer {
   position: relative;
-  top: 25%;
-  left: 75%;
 
 }
 
