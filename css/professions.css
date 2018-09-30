@@ -8,6 +8,7 @@ html {
   background-size: cover;
 }
 
+/* This right here is magic at work. */
 img {
   max-width: 100%;
 }
