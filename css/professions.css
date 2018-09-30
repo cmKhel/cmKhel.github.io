@@ -37,7 +37,7 @@ img {
 
 }
 
-/* The position property currently has no effect on these if set to %. */
+/* Position them divs */
 #Closer {
   top: 50px;
 
@@ -79,9 +79,9 @@ img {
 
 }
 
-/* This kinda works. Set to fixed. */
+/* This kinda works but doesn't scale nicely with the other images. */
 #infoContainer {
-  position: absolute;
+  position: fixed;
   width: 50%;
   left: 50%;
 }
@@ -89,6 +89,6 @@ img {
 #infoPanel {
   position: relative;
   width: 50%;
-  left: 50%;
-  top: 100px;
+  left: 25%;
+  top: 20px;
 }

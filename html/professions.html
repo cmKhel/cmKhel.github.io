@@ -6,13 +6,13 @@
 <link rel="stylesheet" href="../css/professions.css">
 
 <script type="text/javascript">
-	/* 	Zero out the infoPanel div's img src.
-		Replace the infoPanel div's img src with the id of whatever image has been clicked
+	/* 	Zero out the infoImg img src.
+		Replace the infoImg img src with the id of whatever image has been clicked
 		with a prefix of "info" to match the naming conventions in folder. */
 function showInfo(divId) {
 	var id = divId;
-	document.getElementById('infoPanel').src = "";
-	document.getElementById('infoPanel').src = "../images/info" + id + ".png";
+	document.getElementById('infoImg').src = "";
+	document.getElementById('infoImg').src = "../images/info" + id + ".png";
 
 }
 
@@ -25,35 +25,35 @@ function showInfo(divId) {
 		 inside of the following container via showInfo().
 		 Container for responsiveness.	-->
 	<div id="picContainer">
-		<div id="Closer" class="picture" onclick="showInfo('divId');">
+		<div id="Closer" class="picture" onclick="showInfo('Closer');">
 		<img src="../images/Closer.png" alt="Closer">
 		</div>
 
-		<div id="Detective" class="picture" onclick="showInfo('divId');">
+		<div id="Detective" class="picture" onclick="showInfo('Detective');">
 		<img src="../images/Detective.png" alt="Detective">
 		</div>
 
-		<div id="HiredGun" class="picture" onclick="showInfo('divId');">
+		<div id="HiredGun" class="picture" onclick="showInfo('HiredGun');">
 		<img src="../images/HiredGun.png" alt="Hired Gun">
 		</div>
 
-		<div id="Mastermind" class="picture" onclick="showInfo('divId');">
+		<div id="Mastermind" class="picture" onclick="showInfo('Mastermind');">
 		<img src="../images/Mastermind.png" alt="Mastermind">
 		</div>
 
-		<div id="Muscle" class="picture" onclick="showInfo('divId');">
+		<div id="Muscle" class="picture" onclick="showInfo('Muscle');">
 		<img src="../images/Muscle.png" alt="Muscle">
 		</div>
 
-		<div id="Pyromaniac" class="picture" onclick="showInfo('divId');">
+		<div id="Pyromaniac" class="picture" onclick="showInfo('Pyromaniac');">
 		<img src="../images/Pyromaniac.png" alt="Pyromaniac">
 		</div>
 
-		<div id="Tech" class="picture" onclick="showInfo('divId');">
+		<div id="Tech" class="picture" onclick="showInfo('Tech');">
 		<img src="../images/Tech.png" alt="Tech">
 		</div>
 
-		<div id="Thief" class="picture" onclick="showInfo('divId');">
+		<div id="Thief" class="picture" onclick="showInfo('Thief');">
 		<img src="../images/Thief.png" alt="Thief">
 		</div>
 	</div>
@@ -62,7 +62,7 @@ function showInfo(divId) {
 		 to be presented once the respective img is clicked.	-->
 	<div id="infoContainer">
 		<div id="infoPanel">
-		<img src="" alt="Information">
+		<img src="../images/infoCloser.png" id="infoImg" alt="Information">
 		</div>
 	</div>
 
