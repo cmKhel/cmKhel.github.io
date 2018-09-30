@@ -19,36 +19,74 @@ html {
     By utilizing relative positioning with a container div,
     we can then use absolute positioning with the contained class .picture 
     and achieve responsive design. Images scale to their container rather than the entire page. */
-.picContainer {
-  position: relative;
-  width: 100%;
-  height: auto;
+#picContainer {
+    position: absolute;
+    width: 50%;
+    top: 0%;
+    left: 0%;
 }
 
-/* Make the images inside responsive or idk actually do anything?? */
+img {
+  max-width: 100%;
+}
+
 .picture {
-  position: absolute;
-  top: 0;
-  left: 0;
-
-  /* Scale the image down - they're huge and we don't like that. Still not sure how to do this without affecting x,y positioning. */
-  transform: scale(0.5, 0.5);
-  -ms-transform: scale(0.5, 0.5);
-  -webkit-transform: scale(0.5, 0.5);
-  cursor: pointer;
-
-  /*  Padding and margins aren't working how I think they're supposed to work.
-      Actually, nothing in here works how I think it's supposed to work. */
-
-}
-
-/* Container needed to position info image. */
-.infoContainer {
   position: relative;
+  cursor: pointer;
+  transform: scale(0.8, 0.8);
+  -ms-transform: scale(0.8, 0.8);
+  -webkit-transform: scale(0.8, 0.8);
+}
+
+/* The position property currently has no effect on these. */
+#Closer {
+  top: 10%;
 
 }
 
-/* Make the info image responsive. */
+#Detective {
+  top: 20%;
+
+}
 
 
+#HiredGun {
+  top: 30%;
 
+}
+
+#Mastermind {
+  top: 40%;
+
+}
+
+#Muscle {
+  top: 50%;
+
+}
+
+#Pyromaniac {
+  top: 60%;
+
+}
+
+#Tech {
+  top: 70%;
+
+}
+
+#Thief {
+  top: 80%;
+
+}
+
+#infoContainer {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+}
+
+#infoPanel {
+  position: relative;
+  top: 10%;
+}
