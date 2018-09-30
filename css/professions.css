@@ -11,6 +11,7 @@ html {
 /* This right here is magic at work. */
 img {
   max-width: 100%;
+  height: auto;
 }
 
 /* Temporary placement. Fixed to the bottom right of browser. */
@@ -36,7 +37,7 @@ img {
 
 }
 
-/* The position property currently has no effect on these. */
+/* The position property currently has no effect on these if set to %. */
 #Closer {
   top: 50px;
 
@@ -86,6 +87,8 @@ img {
 }
 
 #infoPanel {
-  position: absolute;
+  position: relative;
+  width: 50%;
+  left: 50%;
   top: 100px;
 }
