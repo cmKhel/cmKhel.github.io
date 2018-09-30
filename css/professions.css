@@ -15,26 +15,26 @@ html {
   left: 90%;
 }
 
-/* Container needed to position the images. */
+/*  Container needed to position the images. 
+    By utilizing relative positioning with a container div,
+    we can utilize absolute positioning with the contained class .picture 
+    and achieve responsive design. */
 .picContainer {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-/* Make the images inside responsive or idk ACTUALLY DO SOMETHING */
+/* Make the images inside responsive or idk actually do anything?? */
 .picture {
-  /*  EVERYTHING SAYS POSITION MUST BE ABSOLUTE INSIDE OF A CONTAINER
-      BUT LO AND BEHOLD SHIT COMPLETELY BREAKS AS SOON AS YOU DO THAT
-      WHY DOES EVERY IMAGE SUDDENLY STACK?????????????????? */
-  position: absolute;
+/*  position: absolute; */
   /* Scale the image down - they're huge and we don't like that. */
   transform: scale(0.5, 0.5);
   -ms-transform: scale(0.5, 0.5);
   -webkit-transform: scale(0.5, 0.5);
   cursor: pointer;
 
-  /* WHY DON'T MARGINS OR PADDING DO ANYTHING AAAAAAAAAAAHHHHHHHHHHHHHHHHHHH */
+  /* Padding and margins aren't working how I think they're supposed to work. */
 
 }
 
