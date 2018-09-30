@@ -8,6 +8,10 @@ html {
   background-size: cover;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Temporary placement. Fixed to the bottom right of browser. */
 #home {
   position: fixed;
@@ -15,19 +19,12 @@ html {
   left: 90%;
 }
 
-/*  Container needed to position the images. 
-    By utilizing relative positioning with a container div,
-    we can then use absolute positioning with the contained class .picture 
-    and achieve responsive design. Images scale to their container rather than the entire page. */
+/*  Container needed to position the images. */
 #picContainer {
     position: absolute;
     width: 50%;
     top: 0%;
     left: 0%;
-}
-
-img {
-  max-width: 100%;
 }
 
 .picture {
@@ -80,6 +77,7 @@ img {
 
 }
 
+/* This kinda works. */
 #infoContainer {
   position: absolute;
   width: 50%;
