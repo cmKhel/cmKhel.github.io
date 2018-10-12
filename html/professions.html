@@ -13,8 +13,8 @@ function showInfo(divId) {
 	var id = divId;
 	document.getElementById('infoImg').src = "";
 	document.getElementById('infoImg').src = "../images/info" + id + ".png";
-	//change button hyperlink
-	//document.getElementById('goToClassPage').href = id + "Creation.html";
+	//change button download
+	document.getElementById('download').href = "../templates/" + id + ".pdf";
 
 }
 
@@ -61,18 +61,21 @@ function showInfo(divId) {
 	</div>
 
 	<!-- Container for each class' description and info
-		 to be presented once the respective img is clicked.	-->
+		 to be presented once the respective img is clicked.
+		 Needs PDFs to be uploaded to repo.	-->
 	<div id="infoContainer">
 		<div id="infoPanel">
 		<img src="../images/infoCloser.png" id="infoImg" alt="Information">
 		</div>
 	</div>
 
-	<!-- Learn More
+	<!-- Learn More -->
 	<div id="learnMore">
-		<button id="redirectButton"><a href="asdf" id="goToClassPage">Think you got what it takes? NOT YET IMPLEMENTED</a></button>
-	</div>
-	-->
+		<a id="download" href="../templates/Closer.pdf" download>
+			<button>Begin Your Initiation</button>
+		</a>	
+	</div>	
+
 	<!-- Button to return to index. -->
 	<div id="home">
 		<ul>
