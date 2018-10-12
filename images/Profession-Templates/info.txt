@@ -1,0 +1,14 @@
+The photograph's dimensions are 255x267
+
+Everything (Photograph, text, papers) inside the folder is on a -3.5 degree tilt.
+
+The font type used is John Doe
+
+Front Sizes are-
+
+ - Size 16 for data (Name, Residence, Date of birth, etc)
+ - Size 12 for physical aperences (Height, Weight, etc)
+ - Size 12 for Informant Description area
+ - Size 27 for Capabilities Info (Moves, Looks, Brains, etc)
+ - Size 18 for Status Info (Magazine, Health, Plot Armour)
+ - Size 14 for Inventory

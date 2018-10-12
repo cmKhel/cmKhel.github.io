@@ -10,8 +10,9 @@ html {
 
 /* This right here is magic at work. */
 img {
-  max-width: 100%;
-  height: auto;
+	display: block;
+ 	max-width: 100%;
+	height: auto;
 }
 
 /* Temporary placement. Fixed to the bottom right of browser. */
@@ -24,17 +25,14 @@ img {
 /*  Container needed to position the images. */
 #picContainer {
     position: relative;
+    width: 40%;
 }
 
 
 .picture {
   position: absolute;
   cursor: pointer;
-  transform: scale(0.8, 0.8);
-  -ms-transform: scale(0.8, 0.8);
-  -webkit-transform: scale(0.8, 0.8);
-  left: -3%;
-
+  left: 10%;
 }
 
 /* Position them divs */
@@ -44,38 +42,38 @@ img {
 }
 
 #Detective {
-  top: 200px;
+  top: 150px;
 
 }
 
 
 #HiredGun {
-  top: 350px;
+  top: 250px;
 
 }
 
 #Mastermind {
-  top: 500px;
+  top: 350px;
 
 }
 
 #Muscle {
-  top: 650px;
+  top: 450px;
 
 }
 
 #Pyromaniac {
-  top: 800px;
+  top: 550px;
 
 }
 
 #Tech {
-  top: 950px;
+  top: 650px;
 
 }
 
 #Thief {
-  top: 1100px;
+  top: 750px;
 
 }
 
