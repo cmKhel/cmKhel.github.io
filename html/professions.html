@@ -8,9 +8,11 @@
 <script type="text/javascript">
 	/* 	Zero out the infoImg img src.
 		Replace the infoImg img src with the id of whatever image has been clicked
-		with a prefix of "info" to match the naming conventions in folder. */
+		with a prefix of "info" to match the naming conventions in folder. 
+		Also modifies the download button to give the respective character sheet. */
 function showInfo(divId) {
 	var id = divId;
+	//change the info panel's image
 	document.getElementById('infoImg').src = "";
 	document.getElementById('infoImg').src = "../images/info" + id + ".png";
 	//change button download
