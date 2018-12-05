@@ -100,28 +100,41 @@ a{
 	top: 41%;
 	left: 58%;
 }
+
+
 #campaign{
 	position: absolute;
 	padding: auto;
 	margin: auto;
 	top: 75%;
-	left: 31%;
+	left: 35%;
 }
+
 
 #professions{
 	position: absolute;
 	padding: auto;
 	margin: auto;
-	top: 84%;
-	left: 38%;	
+	top: 75%;
+	left: 55%;	
 }
+
+
+#armory{
+	position: absolute;
+	padding: auto;
+	margin: auto;
+	top: 84%;
+	left: 30%;
+}
+
 
 #crew{
 	position: absolute;
 	padding: auto;
 	margin: auto;
-	top: 75%;
-	left: 50%;	
+	top: 84%;
+	left: 45%;	
 }
 
 #mixtapes{
@@ -129,5 +142,5 @@ a{
 	padding: auto;
 	margin: auto;
 	top: 84%;
-	left: 56%;
+	left: 60%;
 }
