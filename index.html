@@ -8,36 +8,69 @@
 <head>
 <title>Sunset Miami</title>
 <link rel="stylesheet" href="css/index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
 <body>
+	<div id="text" class="hidden">
+		<img src='images/sunset-text.png' alt="Sunset Text" width="919" height="380">
+	</div>
+	<div id="gun" class="hidden2">
+		<img src='images/gun.png' alt="Gun" width="275" height="165">
+	</div>
+	<div id="birds" class="hidden3">
+		<img src='images/birds.png' alt="Birds" width="244" height="211">
+	</div>
 	<!-- Each of these links will 404 until I get around to making them.
 		 Each div corresponds to a link at the bottom of the page. -->
-	<div id="campaign">
+	<div id="campaign" class="hidden3">
 		<ul>
 			<li><a href="html/campaign.html">Campaign</a></li>
 		</ul>
 	</div>
 
-	<div id="professions">
+	<div id="professions" class="hidden3">
 		<ul>
 			<li><a href="html/professions.html">Professions</a></li>
 		</ul>
 	</div>
 
-	<div id="crew">
+	<div id="crew" class="hidden3">
 		<ul>
 			<li><a href="html/crew.html">Crew</a></li>
 		</ul>
 	</div>
 
-	<div id="mixtapes">
+	<div id="mixtapes" class="hidden3">
 		<ul>
 			<li><a href="html/mixtapes.html">Mixtapes</a></li>
 		</ul>
 	</div>
 </body>
+
+	<script>
+	$(document).ready(function () {
+    $('div.hidden').fadeIn(1500).removeClass('hidden');
+});
+
+	$(document).ready(function () {
+	setTimeout(
+		function() 
+  {
+    $('div.hidden2').fadeIn(1500).removeClass('hidden2');
+  }, 1500);
+});
+
+	$(document).ready(function () {
+	setTimeout(
+		function() 
+  {
+    $('div.hidden3').fadeIn(1500).removeClass('hidden3');
+  }, 3000);
+});
+
+	</script>
 
 
 </html>

@@ -26,19 +26,28 @@
 
 
 html { 
-  background: url('../images/Title-Bold.png') no-repeat center center fixed; 
+  background: url('../images/Title-Blank.png') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-div{
-	position: absolute;
-	padding: auto;
-	margin: auto;
-
+div.hidden
+{
+    display: none
 }
+
+div.hidden2
+{
+    display: none
+}
+
+div.hidden3
+{
+    display: none
+}
+
 
 ul{
 	padding: auto;
@@ -67,22 +76,58 @@ a{
 	color: white;
 }
 
+
+#text{
+	position: absolute;
+	padding: auto;
+	margin: auto;
+	top: 22%;
+	left: 24%;
+}
+
+#gun{
+	position: absolute;
+	padding: auto;
+	margin: auto;
+	top: 19.5%;
+	left: 63%;
+}
+
+#birds{
+	position: absolute;
+	padding: auto;
+	margin: auto;
+	top: 41%;
+	left: 58%;
+}
 #campaign{
+	position: absolute;
+	padding: auto;
+	margin: auto;
 	top: 75%;
 	left: 31%;
 }
 
 #professions{
+	position: absolute;
+	padding: auto;
+	margin: auto;
 	top: 84%;
 	left: 38%;	
 }
 
 #crew{
+	position: absolute;
+	padding: auto;
+	margin: auto;
 	top: 75%;
 	left: 50%;	
 }
 
 #mixtapes{
+	position: absolute;
+	padding: auto;
+	margin: auto;
 	top: 84%;
 	left: 56%;
 }
