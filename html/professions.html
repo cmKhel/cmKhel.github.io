@@ -4,23 +4,7 @@
 <head>
 <title>Sunset Miami</title>
 <link rel="stylesheet" href="../css/professions.css">
-
-<script type="text/javascript">
-	/* 	Zero out the infoImg img src.
-		Replace the infoImg img src with the id of whatever image has been clicked
-		with a prefix of "info" to match the naming conventions in folder. 
-		Also modifies the download button to give the respective character sheet. */
-function showInfo(divId) {
-	var id = divId;
-	//change the info panel's image
-	document.getElementById('infoImg').src = "";
-	document.getElementById('infoImg').src = "../images/info" + id + ".png";
-	//change button download
-	document.getElementById('download').href = "../templates/" + id + ".pdf";
-
-}
-
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 </head>
 
@@ -71,6 +55,7 @@ function showInfo(divId) {
 		</div>
 	</div>
 
+
 	<!-- Learn More -->
 	<div id="learnMore">
 		<a id="download" href="../templates/Closer.pdf" download>
@@ -86,6 +71,28 @@ function showInfo(divId) {
 	</div>
 
 </body>
+
+<script>
+	/* 	Zero out the infoImg img src.
+		Replace the infoImg img src with the id of whatever image has been clicked
+		with a prefix of "info" to match the naming conventions in folder. 
+		Also modifies the download button to give the respective character sheet. */
+function showInfo(divId) {
+	var id = divId;
+	//change the info panel's image
+	document.getElementById('infoImg').src = "";
+	document.getElementById('infoImg').src = "../images/info" + id + ".png";
+	//change button download
+	document.getElementById('download').href = "../templates/" + id + ".pdf";
+
+}
+
+	$(document).ready(function () {
+    $('wrapper').fadeIn(1500).removeClass('hidden');
+});
+
+
+</script>
 
 
 </html>
