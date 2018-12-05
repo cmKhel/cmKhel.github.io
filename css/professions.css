@@ -36,6 +36,11 @@ img {
   left: 10%;
 }
 
+.picture:hover {
+    background-color: #862683;
+    background-image: linear-gradient(to right, #713153 20%, #b56c24 100%);
+}
+
 /* Position them divs */
 #Closer {
   top: 50px;
